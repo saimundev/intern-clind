@@ -13,7 +13,7 @@ const HomeProdect = ({ catName }) => {
     const feachCategoryItem = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5050/api//home-prodect/${catName}`
+          `https://intern-neii.onrender.com/api/home-prodect/${catName}`
         );
         setProdect(response.data);
         setLoding(false);
